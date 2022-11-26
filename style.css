@@ -1,0 +1,332 @@
+html,body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    
+}
+
+@media (max-width:1200px) {
+    .navbar ul li a {
+        font-size: 1.1vw;
+    }
+    #slider-img{
+        height: 306px;
+    }
+    .abs{
+       width: 91% !important;
+    }
+}
+@media (max-width:1100px) {
+    .navbar ul li a {
+        font-size: 1.2vw;
+    }
+}
+
+@media (max-width:1000px) {
+    .navbar ul li a {
+        font-size: 1.3vw;
+    }
+}
+
+@media (max-width:991px) {
+    .navbar ul li a {
+        font-size: 1rem;
+    }
+
+    .explore{
+        height: 650px !important;
+        /* overflow-y: hidden; */
+    }
+
+    .explore .explore-text {
+        margin-top: 25px !important;
+        margin-left: 60px !important;
+    }
+
+    .explore .explore-img {
+        margin-top: 40px !important;
+        margin-left: 60px !important;
+    }
+
+    .explore .explore-btn {
+        margin-top: 0px !important;
+        margin-left: 60px !important;
+    }
+
+    .explore .explore-text h2 {
+        font-size: 2.5rem !important;
+    }
+
+    .explore .explore-text h5 {
+        font-size: 1rem !important;
+        margin-top: 30px !important;
+    }
+
+    .explore .explore-img img {
+        width: 150px !important;
+    }
+
+    .btn-explore {
+        margin-left: 0 !important;
+        padding: 10px 40px !important;
+    }
+    .offer{
+    margin-top: 58px !important;
+    }
+    .offer h1{
+        font-size: 2.2rem !important;
+    }
+    .offer h6{
+        font-size: 0.8rem !important;
+    }
+    .center{
+        width: 61%;
+        height: 250px;
+        align-items: center;
+        justify-content: center;
+        display: flex !important;
+    }
+    .center-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .center-x{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    #slider-img{
+        height: 211.8px;
+    }
+    .abs {
+        bottom: 88px !important;
+        left: 15px !important;
+        width: 91.8% !important;
+    }
+}
+    @media (max-width:767px) {
+        .abs {
+            display: none !important;
+    }
+    .cart{
+        width: 100% !important;
+    }
+}
+@media (max-width:650px) {
+    .offer{
+        margin-top: 34px !important;
+        }
+}
+.cart{
+    position: fixed;
+    top:0;
+    bottom:0;
+    right: 0;
+    width: 370px;
+    z-index: 99999;
+    transform: translateX(100%);
+    transition: all .4s linear;
+}
+.cart.active{
+    transform: translateX(0);
+}
+.cart .head{
+    height: 18%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart .head .cart-text{
+    width: 100%;
+    vertical-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+}
+.cart .head button{
+    border:none;
+    background: none;
+    color:white;
+    font-size: 28px;
+    cursor: pointer;
+    outline: none;
+}
+.cart .body{
+    background-color: white;
+    color: gray;
+    height: 83%;
+}
+.tive{
+    color: green !important;
+}
+.navbar ul li a {
+    color: black !important;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: rgb(66, 136, 66) !important;
+}
+
+.navbar .icons {
+    color: black;
+    cursor: pointer;
+}
+
+.Navbar {
+    background-color: white;
+    /* z-index: 9999; */
+    /* height: 100px; */
+
+}
+
+.navbar-brand {
+    margin-right: 0.5rem;
+}
+
+.explore{
+    margin-top: 128px;
+    height: 1000px;
+    width: 100%;
+    background: url("images/explore1.jpeg") no-repeat 0 0;
+    background-size: cover;
+
+    /* overflow-x: hidden; */
+}
+
+.explore .explore-img {
+    margin-top: 150px;
+}
+
+.explore .explore-text {
+    margin-top: 156px;
+    margin-left: 50px;
+    color: white;
+}
+
+.explore .explore-text h2 {
+    font-size: 4rem;
+}
+
+.explore .explore-text h5 {
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+
+.btn-explore {
+    padding: 10px 50px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 40px;
+    background-color: rgb(62, 180, 189);
+    border: none;
+    border-radius: 50px;
+}
+.offer{
+    margin-top: 275px;
+}
+figcaption{
+    font-size: 13px !important;
+}
+.center{
+    transition: 0.4s all ease;
+}
+.center:hover{
+    transform: scale(1.11);
+}
+.center:hover .text-hover{
+    font-size: 15px !important;
+    color: green;
+}
+.shadow{
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+.choose-us{
+    height: 500px;
+    filter: brightness(0.3);
+    background: url("images/why-choose-us.webp") no-repeat 0 0;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choose-us .full-bright{
+    filter: brightness(100%);
+    opacity: (1);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+.center-x{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+#input-hover:hover{
+
+background-color: rgb(223, 236, 236);
+}
+.rounded-1{
+    border-radius: 10px
+}
+.center-1{
+    position: relative;
+}
+.abs{
+    position: absolute;
+    bottom:88px;
+    left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.574);
+    height: 50px;
+    width: 92.5%;
+    /* display: none; */
+    transform:translateY(100%);
+    opacity: 0;
+    transition: 0.3s all ease;
+}
+.abs.show{
+    transform: translateY(0);
+    opacity: 1;
+}
+.abs a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.carousel-control-icon-next{
+    opacity: 1 !important;
+    color: black !important;
+  }
+.abs a:hover{
+    color: rgb(44, 41, 41);
+    cursor: pointer;
+}
+.owl-comming-soon .owl-prev{
+    position: absolute !important;
+    top: 21% !important;
+    left: 20px;
+    color: #afb2bd !important;
+    font-size: 90px !important;
+    outline: none !important;
+}
+.owl-comming-soon .owl-next{
+    position: absolute !important;
+    top: 20% !important;
+    font-size: 90px !important;
+    right: 100px !important;
+    color: #afb2bd !important;
+    outline: none !important;
+}
+.center-1 img{
+    height: 332 px !important;
+}
+.owl-comming-soon img:hover{
+    filter: brightness(0.7);
+    cursor: pointer;
+}

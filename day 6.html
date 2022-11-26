@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <!-- <script src="./js/bootstrap.js"></script> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .mainwrapper {
+            padding: 85px 0px;
+            background-color: rgba(172, 57, 222, 0.596);
+            font-size: 40px;
+        }
+
+        .clockwrappers {
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            background-size: 100%;
+            border: 13px solid brown;
+            border-radius: 50%;
+            background-image: url("img/clock.jpg");
+            box-shadow: 0px 0px 16px 12px #585858;
+        }
+
+        .clockwrappers::before {
+            content: ' ';
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 100;
+            /* background-color: brown; */
+        }
+
+        h1 {
+
+            font-size: 56px;
+            margin-bottom: 43px;
+
+        }
+
+        .hrs {
+            display: flex;
+            justify-content: center;
+            transform: rotate(90deg);
+        }
+
+        .hrs {
+            content: " ";
+            background-position: center center;
+            position: absolute;
+            background-image: url('./img/hand-removebg-preview.png');
+            width: 64px;
+            height: 251px;
+            background-size: cover;
+            margin-left: 157px;
+            margin-top: 62px;
+        }
+
+        .min {
+            display: flex;
+            justify-content: center;
+            transform: rotate(0deg);
+        }
+
+        .min {
+            content: " ";
+            background-position: center center;
+            position: absolute;
+            background-image: url('hand-removebg-preview.png');
+            width: 64px;
+            height: 312px;
+            background-size: cover;
+            margin-left: 156px;
+            margin-top: 32px;
+        }
+
+        .sec {
+            display: flex;
+            justify-content: center;
+            transform: rotate(12deg);
+        }
+
+        .sec {
+            content: " ";
+            background-position: center center;
+            position: absolute;
+            background-image: url('sec-removebg-preview.png');
+            width: 247px;
+            height: 312px;
+            background-size: cover;
+            margin-left: 65px;
+            margin-top: 33px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainwrapper">
+        <div class="container">
+            <h1 class="text-center">Analog Clock</h1>
+            <div class="clockwrappers">
+                <div class="hrs"></div>
+                <div class="min"></div>
+                <div class="sec"></div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        let hrs=document.querySelector('.hrs');
+        let min=document.querySelector('.min');
+        let sec=document.querySelector('.sec');
+        let timecal=(currentval,timecalval)=>{
+            return (360*currentval)/timecalval;
+        }
+        
+        setInterval(function(){
+            let time=new Date();
+        let currhrs=time.getHours() ;
+        let currmin=time.getMinutes();
+        let currsec=time.getSeconds();
+        // console.log(currhrs);
+        // console.log(currsec);
+        hrs.style.transform=`rotateZ(${timecal(currhrs,12)+(currmin/12)}deg)`;
+        // console.log(timecal(currmin,60))
+        // console.log(currmin*6)
+        min.style.transform=`rotateZ(${timecal(currmin,60)}deg)`;
+        sec.style.transform=`rotateZ(${timecal(currsec,60)}deg)`;
+        },1000)
+        // const deg = 6;
+//         setInterval(() => {
+
+// let day = new Date();
+// let hh = day.getHours() * 30;
+// let mm = day.getMinutes() * 6;
+// let ss = day.getSeconds() * 6;
+
+// hrs.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
+// min.style.transform = `rotateZ(${mm}deg)`;
+// sec.style.transform = `rotateZ(${ss}deg)`;
+// },1000)
+    </script>
+</body>
+
+</html>

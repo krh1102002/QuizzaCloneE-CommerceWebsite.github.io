@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../owl.carousel.css">
+    <link rel="stylesheet" href="../owl.theme.green.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        @media (max-width:1198px) {
+            .owl-prev {
+                
+            }
+
+            .owl-next {
+                right: 30px !important;
+            }
+
+        }
+
+        @media (max-width:991px) {
+            .owl-prev {
+               
+            }
+
+            .owl-next {
+                right: 65px !important;
+            }
+        }
+
+        @media (max-width:767px) {
+            .owl-prev {
+                
+            }
+
+            .owl-next {
+               right: 240px !important;
+            }
+            .owl-one{
+                margin-left: 7rem !important;
+            }
+        }
+        @media (max-width:465px) {
+            .owl-one{
+                margin-left: 3rem !important;
+            }
+        }
+
+        section {
+            margin-top: 150px;
+        }
+
+        a {
+            color: gray;
+            /* cursor: not-allowed; */
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: gray;
+        }
+
+        a.actice:hover {
+            text-decoration: none;
+        }
+
+        a.active {
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+
+        .owl-prev {
+            position: absolute;
+            left: -30px;
+            top: 25%;
+            outline: none !important;
+            font-size: 60px !important;
+        }
+
+        .owl-prev,
+        .owl-next:hover {
+            border: none;
+            outline: none;
+        }
+
+        .owl-next {
+            position: absolute;
+            top: 25%;
+            font-size: 60px !important;
+            right: 100px;
+            outline: none !important;
+        }
+
+        .owl-prev,
+        .owl-next:hover {
+            cursor: pointer;
+        }
+
+        .slick-list {
+            text-align: center;
+        }
+
+        .add-to-cart {
+            width: 80%;
+            border: none;
+            border-radius: 50px;
+            background-color: rgb(117 31 255);
+            color: white;
+        }
+
+        .add-to-cart:hover {
+            cursor: pointer;
+            background-color: rgba(117, 31, 255, 0.665);
+        }
+
+        .buy-now {
+            width: 80%;
+            border: none;
+            border-radius: 50px;
+            background-color: black;
+            color: white;
+        }
+
+        .buy-now:hover {
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.665);
+        }
+        .owl-one .item img {
+            height: 255px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Navbar fixed-top">
+        <div class="container" style="color: white;">
+            <div class="row ">
+                <div class="col-12 " style="color: white;">
+                    <nav class="navbar  navbar-expand-lg navbar-light" style="color: white;">
+                        <span class="navbar-brand ">
+                            <div class="img-1"><img src="../images/qizaa.jpeg" alt=""></div>
+                            <div class="img-2 d-lg-block d-none"><img src="../images/qizaa-text.jpeg" alt=""></div>
+                        </span>
+                        <button class="navbar-toggler mr-auto" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="icons-outside d-lg-none">
+                            <i class="fa-solid fa-cart-shopping " style="color: rgb(52, 151, 52); font-size:25px;"></i>
+                            <span class="icon-0 bg-success px-1" style="color:white; border-radius:50% ;">0</span>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="navbar-nav mr-auto text-center">
+                                <li class="nav-item "><a href="../index.html" class="nav-link tive">Home</a></li>
+                                <li class="nav-item"><a href="../our-store.html" class="nav-link">OurStore</a></li>
+                                <li class="nav-item"><a href="../tableware.html" class="nav-link">Tableware</a></li>
+                                <li class="nav-item"><a href="../sustainable product.html" class="nav-link">Sustainable Packaging</a></li>
+                                <li class="nav-item"><a href="../lifestyle-products.html" class="nav-link">Lifestyle Product</a></li>
+                                <li class="nav-item"><a href="../organic-product.html" class="nav-link">Organic Product</a></li>
+                            </ul>
+
+                            <div class="icons ">
+                                <div class="d-inline-block">
+                                    <i class="fa-solid fa-cart-shopping d-lg-inline-block d-none"
+                                        style="color: rgb(52, 151, 52); font-size:25px;"></i>
+                                    <span class="icon-0 d-lg-inline-block d-none bg-success px-1"
+                                        style="color:white; border-radius:50% ;">0</span>
+                                </div>
+                                <div class="d-lg-inline-block text-center">
+                                    <i class="fa-solid fa-user d-lg-inline-block " id="user"></i>
+                                    <span class="community d-lg-inline-block "><a href="../signup.html">Join Community</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="row d-lg-flex d-none">
+            <div class="col-lg-8 " style="margin-left:150px;">
+                <a href="../index.html" class="active">Home</a>
+                <a href="../tableware.html" class="active">/Tableware</a>
+                <span style="color: gray;">/Bagasse Container(Lids Not Included)</span>
+            </div>
+            <div class="col-lg-2">
+                <a href="product-page-ta-10.html" class="active">
+                    < &nbsp;prev</a>
+                        <span> | </span>
+                        <a href="product-page-ta-12.html" class="active"> &nbsp;next ></a>
+            </div>
+        </div>
+        <div class="row d-lg-none d-flex">
+            <div class="col ml-5">
+                <a href="../index.html" class="active">
+                    < Back to Home</a>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-5 col-md-7 col-10 ml-lg-5 ml-0  mt-5 ">
+                <!-- <figure class="figure"> -->
+                <div class="owl-two owl-theme owl-carousel">
+                    <div class="item">
+                        <img src="../images/ta-11.jpg" class="  py-4"
+                        alt=""style="border:1px solid gray">
+                    </div>
+                    <div class="item">
+                        <img src="../images/tab-11.jpg" class="  py-4"
+                        alt=""style="border:1px solid gray">
+                    </div>
+                    
+                    
+                </div>
+               
+
+                <!-- </figure> -->
+            </div>
+            <div class="col-lg-4 col-md-7 col-10 mt-lg-5 mt-1">
+                <h2>Bagasse Container(Lids Not Included)</h1>
+                    
+                    <p class="display-5 mt-3">₹182.00</p>
+                    <label for="select">Volume</label> <br>
+                    <select name="" id="select" class="custom-select w-100">
+                        <option value="">500 ml </option>
+                        <option value="">700 ml</option>
+                        
+                    </select>
+                    <label for="select">Pack Size</label> <br>
+                    <select name="" id="select" class="custom-select w-100">
+                        <option value="">25 </option>
+                        <option value="">125</option>
+                        
+                    </select>
+                    <label for="quantity">Quantity</label><br>
+                    <input type="number" value="1" name="" id="quantity"
+                        style="padding:5px; width:30%; border:1px solid gray; color:gray;">
+                    <br> <button class="my-3 p-2 add-to-cart">Add to cart</button> <br>
+                    <button class="my-3 p-2 buy-now pt-0">Buy Now</button>     
+                    <h4 style="width: 159px;
+                    border-bottom: 4px solid black;" class="pl-3">Product Info</h4>
+                    <p class="pt-3">Made from sugarcane waste. Biodegradable and sustainable, Chuk tableware will surprise you with it’s versatility. Sturdy, oven friendly, freezer friendly AND microwave friendly, Chuk is the go to for plastic freedisposable tableware. Bagasse containers are suitable for serving food, takeaway, food deliveries, cloud kitchens, in eateries, cafes, restaurants , in cafeterias and schools. *
+                        <br>
+                        Available in 500 ml and 750 ml <br>
+                        
+Pack size : 25 and 125
+                    </p>
+                    
+                </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            
+            <div class="container mt-5 ">
+                <h1 class="my-5 text-center">Related Products</h1>
+                <div class="owl-carousel owl-one ml-4 d-flex justify-conten-center align-items-center">
+                    <div class="item">
+                        <figure class="figure">
+                            <img src="../images/os-2.jpg" alt="" onmouseover="show(1)" onmouseout="hide(1)" onclick="location.href='product-page-2.html'">
+                            <figcaption class="mt-3">Gaumatram Pure A2 Vedic Bilona <br> Ghee ( 1 ltr, 500ml, 300ml)
+                                <br><br> ₹2,000.00</figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="figure">
+                            <img src="../images/os-3.jpg" alt="" onmouseover="show(2)" onmouseout="hide(2)" onclick="location.href='product-page-3.html'">
+                            <figcaption class="mt-3">Birchwood Fork (Pack of 100) 16cm <br> <br> ₹138.00</figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="figure">
+                            <img src="../images/os-4.jpg" alt="" onmouseover="show(3)" onmouseout="hide(3)" onclick="location.href='product-page-4.html'">
+                            <figcaption class="mt-3"> Birchwood Spoon (Pack of 100) 14cm <br> <br> ₹121.00</figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="figure">
+                            <img src="../images/os-5.jpg" alt="" onmouseover="show(4)" onmouseout="hide(4)" onclick="location.href='product-page-5.html'">
+                            <figcaption class="mt-3">Cotton Carry Bags(14x18 Size) <br> <br> ₹48.00 </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="figure">
+                            <img src="../images/os-6.jpg" alt="" onmouseover="show(5)" onmouseout="hide(5)" onclick="location.href='product-page-6.html'">
+                            <figcaption class="mt-3">Canvas Box Bag - Cotton (16x14x4) <br><br> ₹121.00 </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="figure">
+                            <img src="../images/os-7.jpg" alt="" onmouseover="show(6)" onmouseout="hide(6)" onclick="location.href='product-page-7.html'">
+                            <figcaption class="mt-3">Bagasse Plates (Pack of 25) <br><br> ₹100.00</figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="figure">
+                            <img src="../images/os-8.jpg" alt="" onmouseover="show(7)" onmouseout="hide(7)" onclick="location.href='product-page-8.html'">
+                            <figcaption class="mt-3">Copper Bottle - 700ml Best, Leak <br> Proof Copper Bottle <br><br> ₹660.00 </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="figure">
+                            <img src="../images/os-9.jpg" alt="" onmouseover="show(8)" onmouseout="hide(8)" onclick="location.href='product-page-9.html'">
+                            <figcaption class="mt-3">Bagasse Bowl (Pack of 25) <br><br> ₹61.00</figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="figure">
+                            <img src="../images/os-10.jpg" alt="" onmouseover="show(9)" onmouseout="hide(9)" onclick="location.href='product-page-10.html'">
+                            <figcaption class="mt-3">Bagasse Container(Lids Not Included) <br><br> ₹182.00 </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="figure">
+                            <img src="../images/os-11.jpg" alt="" onmouseover="show(10)" onmouseout="hide(10)" onclick="location.href='product-page-11.html'">
+                            <figcaption class="mt-3">Bagasse Compartment Trays (Pack of 25) <br><br> ₹330.00</figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="figure">
+                            <img src="../images/os-12.jpg" alt="" onmouseover="show(11)" onmouseout="hide(11)" onclick="location.href='product-page-12.html'">
+                            <figcaption class="mt-3">Copper Bottle - 1000ml Best, <br> Leak Proof Copper Bottle <br><br> ₹820.00</figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="figure">
+                            <img src="../images/os-13.jpg" alt="" onmouseover="show(12)" onmouseout="hide(12)" onclick="location.href='product-page-13.html'">
+                            <figcaption class="mt-3">Gaumatram Pure A2 Vedic Bilona <br> Ghee ( 1 ltr, 500ml, 300ml) <br><br> ₹2000.00 </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="figure">
+                            <img src="../images/os-14.jpg" alt="" onmouseover="show(13)" onmouseout="hide(13)" onclick="location.href='product-page-14.html'">
+                            <figcaption class="mt-3"> Canvas Box Bag - Cotton <br><br> ₹88 </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="figure">
+                            <img src="../images/os-15.jpg" alt="" onmouseover="show(14)" onmouseout="hide(14)" onclick="location.href='product-page-15.html'">
+                            <figcaption class="mt-3"> 
+    
+                                Cotton Carry Bags<br><br> ₹28.00 </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="figure">
+                            <img src="../images/os-16.jpg" alt="" onmouseover="show(15)" onmouseout="hide(15)" onclick="location.href='product-page-16.html'">
+                            <figcaption class="mt-3">Vegetable Compartment Bags <br><br> ₹220.00 </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="figure">
+                            <img src="../images/os-17.jpg" alt="" onmouseover="show(16)" onmouseout="hide(16)" onclick="location.href='product-page-17.html'">
+                            <figcaption class="mt-3">Bamboo Cutlery Set<br><br> ₹385.00 </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="figure">
+                            <img src="../images/os-18.jpg" alt="" onmouseover="show(17)" onmouseout="hide(17)" onclick="location.href='product-page-18.html'">
+                            <figcaption class="mt-3">Bamboo Fork (Pack of 5)<br><br> ₹385.00 </figcaption>
+                        </figure>
+                    </div>
+                </div>
+    </section>
+    <footer class="mt-5" style="font-size:0.8rem;">
+        <div class=" footer-top  d-flex flex-column justify-content-center  text-white py-5"
+            style="background-color:#232f3e;">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-3 mt-lg-0 mt-md-5 order-lg-first order-md-last col-md-4 col-6">
+                        <h6>Contact</h6>
+                        <p>483/14, Opp. Harikaka <br> Compound, NH4, Belgavi-Hubli Service Road, Belgavi - Karnataka
+                            India -590016 <br> Email- info@qizaa.com <br> Call -+91 9075006557</p>
+                        <div>
+                            <img src="../images/insta.jpeg" alt="">
+                            <img src="../images/facebook.jpeg" alt="">
+                            <img src="../images/twitter.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <h6>Shop</h6>
+                        <p>All Products <br>
+                            Lifestyle Products <br>
+                            Organic Product <br>
+                            Tableware</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mt-md-0 mt-4">
+                        <h6>Customer Support</h6>
+                        <p>
+                            Contact Us <br>
+                            Help Center <br>
+                            About Us <br>
+                            Careers
+                        </p>
+                    </div>
+                    <div class="col-lg-2 col-md-4 order-last-lg order-md-first col-6 mt-md-0 mt-4">
+                        <h6 class="">Policy</h6>
+                        <p class="">
+                            Shipping & Returns <br>
+                            Terms & Conditions <br>
+                            Privacy Policy <br>
+                            FAQ
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-12 text-center">
+                    <p>We Accept the following Payming methods</p>
+                </div>
+            </div>
+            <div class="row justify-content-center px-4 pt-5">
+                <div class="col-md-1 col-2 ml-1">
+                    <img src="../images/master_card.jpeg" class="img-fluid d-block w-100" alt="">
+                </div>
+                <div class="col-md-1 offset-lg-0 offset-2 col-2 ml-2">
+                    <img src="../images/AmericanExpress.jpeg" class="img-fluid d-block w-100" alt="">
+                </div>
+                <div class="col-md-1 ml-2 col-3">
+                    <img src="../images/BHIM.jpeg" class="img-fluid d-block w-100" alt="">
+                </div>
+                <div class="col-md-1 col-2 ml-2 ">
+                    <img src="../images/upi.webp" class="img-fluid d-block w-100" alt="">
+                </div>
+                <div class="col-md-1 offset-lg-0 offset-2 col-2 ml-2">
+                    <img src="../images/visa.webp" class="img-fluid d-block w-100" alt="">
+                </div>
+                <div class="col-md-1 col-2 ml-2 mt-md-0 mt-3">
+                    <img src="../images/Paypal.jpeg" class="img-fluid d-block w-100" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom d-flex justify-content-center pt-5" style="background-color: #131a22; color:white">
+            <div class="content">
+                <div class="logo text-center">
+                    <img src="../images/qizaa.jpeg" class="rounded-circle " alt="">
+                </div>
+                <div class="logo-text text-center ">
+                    <img src="../images/qizaa-text.jpeg" class="bg-white p-1 my-2" alt="">
+                </div>
+                <p class="text-center">All Rights Reserved © 2021 by Qizaa - Sustainablity in Your Pocket</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/3401d03427.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="../owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-two').owlCarousel({
+                items:1,
+                loop:false,
+                // dots:true,
+                margin:10
+            })
+        })
+        $(document).ready(function () {
+            $('.owl-one').owlCarousel({
+                items: 3,
+                margin: 5,
+                loop: true,
+                nav: true,
+                
+                responsive: {
+                    0:{
+                        items:1,
+                        nav:false,
+                        autoplay:true,
+                        loop:true
+                    },
+                    766: {
+                        items: 2,
+                        nav: true,
+                    },
+                    991: {
+                        items: 3,
+                    }
+                }
+
+            })
+        })
+    </script>
+</body>
+
+</html>

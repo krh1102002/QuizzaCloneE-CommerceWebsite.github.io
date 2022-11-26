@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.jj{
+    cursor: pointer;
+}
+.jj img{
+    height: 300px;
+
+}
+/* .abs{
+    bottom: 65px;
+} */
+figure img{
+    height: 380px !important;
+}

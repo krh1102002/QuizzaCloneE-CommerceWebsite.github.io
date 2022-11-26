@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.row h6,.row p{
+    font-weight: 200;
+}
+.jgg{
+    margin-top: 50px;
+    height: 300px;
+}
+.jjh{
+    margin-top: 200px;
+}
+.jlg{
+    transition: all 0.4s ease-in-out 0s;
+    margin-top: 50px;
+    /* height: 300px; */
+}
+/* .jlg img{
+   
+    
+} */
+.jlg h6{
+    font-weight: 700;
+}
+.jlg:hover{
+    margin-top: -20px;
+}
+.img-fluid{
+    margin-top:-9px;
+}
+.abs{
+    bottom: 65px;
+}
+figure img{
+    height: 330px !important;
+}
+.abs-1{
+    bottom: 85px;
+}

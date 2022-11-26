@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/3401d03427.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="owl.carousel.css">
+    <link rel="stylesheet" href="owl.theme.green.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .quick-btn {
+            background-color: rgb(117 31 255);
+            color: white;
+        }
+
+        .quick-btn:hover {
+            background-color: rgb(129, 53, 251);
+        }
+        
+img:hover{
+    cursor: pointer;
+}
+    
+    </style>
+</head>
+
+<body>
+    <div class="cart">
+        <div class="head  py-lg-4 pt-lg-2 px-lg-3">
+            <div class="button" >
+                <button class="pl-3" title="close cart widget" onclick="hide_cart()">></button>
+            </div>
+            <div class="cart-text text-center">Cart</div>
+            
+        </div>
+        <div class="body">
+            <p class="text-center pt-5">Cart is Empty</p>
+        </div>
+    </div>
+    <div class="all-content">
+    <div class="Navbar fixed-top">
+        <div class="container" style="color: white;">
+            <div class="row ">
+                <div class="col-12 " style="color: white;">
+                    <nav class="navbar  navbar-expand-lg navbar-light" style="color: white;">
+                        <span class="navbar-brand ">
+                            <div class="img-1"><img src="images/qizaa.jpeg" alt=""></div>
+                            <div class="img-2 d-lg-block d-none"><img src="images/qizaa-text.jpeg" alt=""></div>
+                        </span>
+                        <button class="navbar-toggler mr-auto" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="icons-outside d-lg-none">
+                            <i class="fa-solid fa-cart-shopping " style="color: rgb(52, 151, 52); font-size:25px;"></i>
+                            <span class="icon-0 bg-success px-1" style="color:white; border-radius:50% ;">0</span>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="navbar-nav mr-auto text-center">
+                                <li class="nav-item "><a href="index.html" class="nav-link tive" style="color:rgb(52, 151, 52) !important ;">Home</a></li>
+                                <li class="nav-item"><a href="our-store.html" class="nav-link">OurStore</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">Tableware</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">Sustainable Packaging</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">Lifestyle Product</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">Organic Product</a></li>
+                            </ul>
+
+                            <div class="icons ">
+                                <div class="d-inline-block">
+                                    <i class="fa-solid fa-cart-shopping d-lg-inline-block d-none"
+                                        style="color: rgb(52, 151, 52); font-size:25px; cursor: pointer;" onclick="show_cart()"></i>
+                                    <span class="icon-0 d-lg-inline-block d-none bg-success px-1"
+                                        style="color:white; border-radius:50% ;">0</span>
+                                </div>
+                                <div class="d-lg-inline-block text-center">
+                                    <i class="fa-solid fa-user d-lg-inline-block " id="user"></i>
+                                    <span class="community d-lg-inline-block ">Join Community</span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="" onclick="hide_cart()">
+        <div class="explore">
+            <div class="container">
+                <div class="row">
+                    <div class="explore-text col-lg-6 col-10">
+                        <h2>Sustainablity</h2>
+                        <h2>In Your Pocket</h2>
+                        <h5>Building a future that's exciting</h5>
+                    </div>
+                    <div class="col-lg-4 explore-img col-10">
+                        <img src="images/explore.png" alt="">
+                    </div>
+                    <div class="col-10 explore-btn">
+                        <button class="btn-explore">Explore</button>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-12  offer">
+                        <h1 class="font-weight-bold text-success text-center">WHAT WE OFFER</h1>
+                        <h6 class="font-weight-normal text-success text-center">Qizaa is an All In One platform for
+                            Sustainable Products, B2B Sustainable</h6>
+                        <h6 class="font-weight-normal text-success text-center">Services, and Community Programs for a
+                            Sustainable Lifestyle.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-lg-3 col-md-5 rounded-1  px-lg-4 pt-lg-5 mr-md-5 mb-5 border center shadow">
+                    <figure class="figure ">
+                        <img src="images/sus-product.webp"
+                            class="figure-img img-fluid img-responsive center-block d-block mx-auto" alt="">
+                        <h5 class="text-center font-weight-bold pt-md-4">Sustainable Products</h5>
+                        <figcaption class="figure-caption text-center text-hover">Buy sustainable zero-waste
+                            products from best brands.</figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-5 rounded-1 px-lg-5 shadow pt-lg-5 mr-md-5 mb-5 border center">
+                    <figure class="figure">
+                        <img src="images/B2Bservice.webp"
+                            class="figure-img img-fluid img-responsive center-block d-block mx-auto" alt="">
+                        <h5 class="text-center font-weight-bold pt-md-4 ">B2B Service</h5>
+                        <figcaption class="figure-caption text-center text-hover">Introducing sustainable culture in
+                            corporate environment. </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3  col-md-5 rounded-1 px-lg-5 pt-lg-5 mb-5  border  center shadow">
+                    <figure class="figure">
+                        <img src="images/ourcommunity.webp"
+                            class="figure-img img-fluid img-responsive center-block d-block mx-auto" alt="">
+                        <h5 class="text-center font-weight-bold pt-md-4">Our Community</h5>
+                        <figcaption class="figure-caption text-center text-hover">Introducing sustainable culture in
+                            all communities</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-5 ">
+                    <img src="images/ShopNow.jpeg" class="img-responsive center-block d-block mx-auto" alt="">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-4  col-md-6 center-1" onmouseover="show(18)" onmouseout="hide(18)">
+                    <figure class="figure">
+                        <img src="images/os-19.webp" alt="" class="img-fluid img-responsive"
+                            onclick="location.href='Product-pages/product-page-19.html'">
+                        <p>Bamboo Knife (Pack of 5)</p>
+                        <figcaption style="margin-top:-11px">&#8377 385.00</figcaption>
+                    </figure>
+                    <div class="abs">
+                        <a href="" class="text-center" data-toggle="modal" data-target="#myModal19">Quick View</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal19">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="owl-carousel owl-theme os-slider">
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-19.1.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-19.2.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <h2 class="w-100">Bamboo Knife (Pack of 5)</h2>
+                                        <h6 class="w-100">₹385.00</h6>
+                                        <label class="mt-4" for="quantity">Quantity</label> <br>
+                                        <input class="" value="1" type="number" name="" id="quantity"
+                                            style="width: 70px;">
+                                        <button class="quick-btn btn w-100 mt-4"> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary"><a href="product-pages/product-page-19.html"
+                                        style="color:white">View More Details</a></button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 center-1" onmouseover="show(19)" onmouseout="hide(19)">
+                    <figure class="figure">
+                        <img src="images/os-20.webp" alt="" class="img-fluid img img-responsive"
+                            onclick="location.href='Product-pages/product-page-20.html'">
+                        <p>Bamboo Spoon (Pack of 5) Price </p>
+                        <figcaption style="margin-top:-11px">&#8377 385.00</figcaption>
+                    </figure>
+                    <div class="abs">
+                        <a href="" class="text-center" data-toggle="modal" data-target="#myModal20">Quick View</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal20">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="owl-carousel owl-theme os-slider">
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-20.1.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-20.2.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5"> <h2>Bamboo Spoon (Pack of 5)</h2>
+                                        <h6 class="w-100">₹385.00</h6>
+                                        <label class="mt-4" for="quantity">Quantity</label> <br>
+                                        <input class="" value="1" type="number" name="" id="quantity"
+                                            style="width: 70px;">
+                                        <button class="quick-btn btn w-100 mt-4"> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary"><a href="product-pages/product-page-20.html"
+                                        style="color:white">View More Details</a></button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 center-1" onmouseover="show(20)" onmouseout="hide(20)">
+                    <figure class="figure">
+                        <img src="images/os-21.webp" alt="" class="img-fluid img-responsive"
+                            onclick="location.href='Product-pages/product-page-21.html'">
+                        <p>Bamboo Straw 8 Inch (Pack of 5)</p> <br>
+                        <figcaption style="margin-top:-11px">&#8377 385.00</figcaption>
+                    </figure>
+                    <div class="abs ">
+                        <a href="" class="text-center" data-toggle="modal" data-target="#myModal21">Quick View</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal21">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="owl-carousel owl-theme os-slider">
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-21.1.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-21.1.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <h2 class="w-100">Bamboo Straw 8 Inch (Pack of 5)</h2>
+                                        <h6 class="w-100">₹385.00</h6>
+                                        <label class="mt-4" for="quantity">Quantity</label> <br>
+                                        <input class="" value="1" type="number" name="" id="quantity"
+                                            style="width: 70px;">
+                                        <button class="quick-btn btn w-100 mt-4"> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary"><a href="product-pages/product-page-21.html"
+                                        style="color:white">View More Details</a></button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 center-1" onmouseover="show(21)" onmouseout="hide(21)">
+                    <figure class="figure">
+                        <img src="images/os-22.webp" alt="" class="img-fluid img-responsive"
+                            onclick="location.href='Product-pages/product-page.22.html'">
+                        <p>Bamboo Toothbrush For Adults</p> <br>
+                        <figcaption style="margin-top:-11px">&#8377 134.00</figcaption>
+                    </figure>
+                    <div class="abs">
+                        <a href="" class="text-center" data-toggle="modal" data-target="#myModal22">Quick View</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal22">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="owl-carousel owl-theme os-slider">
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-22.1.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-22.2.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-22.3.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-22.4.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <h2 class="w-100">Bamboo Toothbrush For Adults</h2>
+                                        <h6 class="w-100">₹134.00</h6>
+                                        <label class="mt-4" for="quantity">Quantity</label> <br>
+                                        <input class="" value="1" type="number" name="" id="quantity"
+                                            style="width: 70px;">
+                                        <button class="quick-btn btn w-100 mt-4"> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary"><a href="product-pages/product-page-4.html"
+                                        style="color:white">View More Details</a></button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 center-1" onmouseover="show(22)" onmouseout="hide(22)">
+                    <figure class="figure">
+                        <img src="images/os-23.webp" alt="" class="img-fluid img-responsive"
+                            onclick="location.href='Product-pages/product-page-23.html'">
+                        <p>Bamboo Toothbrush For Kids</p> <br>
+                        <figcaption style="margin-top:-11px">&#8377 110.00</figcaption>
+                    </figure>
+                    <div class="abs">
+                        <a href="" class="text-center" data-toggle="modal" data-target="#myModal23">Quick View</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal23">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="owl-carousel owl-theme os-slider">
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-23.1.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-23.2.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-23.3.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-23.4.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <h2>Bamboo Toothbrush For Kids</h2>
+                                        <h6 class="w-100">₹110.00</h6>
+                                        <label class="mt-4" for="quantity">Quantity</label> <br>
+                                        <input class="" value="1" type="number" name="" id="quantity"
+                                            style="width: 70px;">
+                                        <button class="quick-btn btn w-100 mt-4"> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary"><a href="product-pages/product-page-5.html"
+                                        style="color:white">View More Details</a></button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 center-1" onmouseover="show(23)" onmouseout="hide(23)">
+                    <figure class="figure">
+                        <img src="images/os-24.webp" alt="" class="img-fluid img-responsive"
+                            onclick="location.href='Product-pages/product-page-24.html'">
+                        <p>Natural Fibre Scrubbers Loofah (Pack of 2)</p> <br>
+                        <figcaption style=" margin-top:-11px">&#8377 275.00</figcaption>
+                    </figure>
+                    <div class="abs">
+                        <a href="" class="text-center" data-toggle="modal" data-target="#myModal24">Quick View</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal24">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="owl-carousel owl-theme os-slider">
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-24.1.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-24.2.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-24.3.webp" alt="">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <h2 class="w-100">
+                                            Natural Fibre Scrubbers Loofah (Pack of 2)</h2>
+                                        <h6 class="w-100">₹275.00</h6>
+
+                                        <label class="mt-4" for="quantity">Quantity</label> <br>
+                                        <input class="" type="number" value="1" name="" id="quantity"
+                                            style="width: 70px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary"><a href="product-pages/product-page-24.html" style="color:white">View More
+                                        Details</a></button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 center-1" onmouseover="show(24)" onmouseout="hide(24)">
+                    <figure class="figure">
+                        <img src="images/os-25.webp" alt="" class="img-fluid img-responsive"
+                            onclick="location.href='Product-pages/product-page-25.html'">
+                        <p>Seed Pen (Pack of 5)</p> <br>
+                        <figcaption style="margin-top:-11px">&#8377 110.00</figcaption>
+                    </figure>
+                    <div class="abs">
+                        <a href="" class="text-center" data-toggle="modal" data-target="#myModal25">Quick View</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal25">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="owl-carousel owl-theme os-slider">
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-25.1.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-25.2.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-25.3.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-25.4.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <h2 class="w-100">Seed Pen (Pack of 5)</h2>
+                                        <h6 class="w-100">₹100.00</h6>
+
+                                        <label class="mt-4" for="quantity">Quantity</label> <br>
+                                        <input class="" value="1" type="number" name="" id="quantity"
+                                            style="width: 70px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary"><a href="product-pages/product-page-25.html" style="color:white">View More
+                                        Details</a></button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 center-1" onmouseover="show(25)" onmouseout="hide(25)">
+                    <figure class="figure">
+                        <img src="images/os-26.webp" alt="" class="img-fluid img-responsive"
+                            onclick="location.href='Product-pages/product-page-26.html'">
+                        <p>Seed Pencil (Pack of 5)</p>
+                        <figcaption style="margin-top:-11px">&#8377 88.00</figcaption>
+                    </figure>
+                    <div class="abs">
+                        <a href="" class="text-center" data-toggle="modal" data-target="#myModal26">Quick View</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal26">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="owl-carousel owl-theme os-slider">
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-26.1.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-26.2.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-26.3.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <h2 class="w-100">
+                                            Seed Pencil (Pack of 5)</h2>
+                                        <h6 class="w-100">₹88.00</h6>
+
+                                        <label class="mt-4" for="quantity">Quantity</label> <br>
+                                        <input class="" value="1" type="number" name="" id="quantity"
+                                            style="width: 70px;">
+
+                                        <button class="quick-btn btn w-100 mt-4"> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary"><a href="product-pages/product-page-26.html"
+                                        style="color:white">View More Details</a></button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 center-1" onmouseover="show(26)" onmouseout="hide(26)">
+                    <figure class="figure">
+                        <img src="images/os-27.webp" alt="" class="img-fluid img-responsive"
+                            onclick="location.href='Product-pages/product-page-27.html'">
+                        <p>SS Straws Bent (Pack of 5)</p> <br>
+                        <figcaption style="margin-top:-11px">&#8377 286.00</figcaption>
+                    </figure>
+                    <div class="abs">
+                        <a href="" class="text-center" data-toggle="modal" data-target="#myModal27">Quick View</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal27">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="owl-carousel owl-theme os-slider">
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-27.1.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-27.2.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-27.3.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <h2 class="w-100">SS Straws Bent (Pack of 5)</h2>
+                                        <h6 class="w-100">₹286.00</h6>
+                                        <label class="mt-4" for="quantity">Quantity</label> <br>
+                                        <input class="" value="1" type="number" name="" id="quantity"
+                                            style="width: 70px;">
+                                        <button class="quick-btn btn w-100 mt-4"> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary"><a href="product-pages/product-page-27.html"
+                                        style="color:white">View More Details</a></button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 center-1" onmouseover="show(27)" onmouseout="hide(27)">
+                    <figure class="figure">
+                        <img src="images/os-28.webp" alt="" class="img-fluid img-responsive"
+                            onclick="location.href='Product-pages/product-page-28.html'">
+                        <p>SS Straws Straight (Pack of 5)</p> <br>
+                        <figcaption style="margin-top:-11px">&#8377 264.00</figcaption>
+                    </figure>
+                    <div class="abs">
+                        <a href="" class="text-center" data-toggle="modal" data-target="#myModal28">Quick View</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal28">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="owl-carousel owl-theme os-slider">
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-28.1.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-28.2.webp" alt="">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <h2 class="w-100">SS Straws Straight (Pack of 5)</h2>
+                                        <h6 class="w-100">₹264.00</h6>
+                                        <label class="mt-4" for="quantity">Quantity</label> <br>
+                                        <input class="" value="1" type="number" name="" id="quantity"
+                                            style="width: 70px;">
+                                        <button class="quick-btn btn w-100 mt-4"> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary"><a href="product-pages/product-page-28.html"
+                                        style="color:white">View More Details</a></button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 center-1" onmouseover="show(28)" onmouseout="hide(28)">
+                    <figure class="figure">
+                        <img src="images/os-29.webp" alt="" class="img-fluid img-responsive"
+                            onclick="location.href='Product-pages/product-page-29.html'">
+                        <p>Birchwood Fork (Pack of 100)</p> <br>
+                        <figcaption style="margin-top:-11px">&#8377 138.00</figcaption>
+                    </figure>
+                    <div class="abs">
+                        <a href="" class="text-center" data-toggle="modal" data-target="#myModal29">Quick View</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal29">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="owl-carousel owl-theme os-slider">
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-29.1.webp " alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-29.2.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-29.3.webp" alt="">
+                                            </div>
+                                            
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <h2 class="w-100">Birchwood Fork (Pack of 100)</h2>
+                                        <h6 class="w-100">₹138.00</h6>
+                                        <label class="mt-4" for="size">Size</label>
+                                        <select name="" id="size" class="w-100 p-2">
+                                            <option value="" selected>Select</option>
+                                            <option value="">14 cm</option>
+                                            <option value="">16 cm</option>
+                                        </select>
+                                        <label class="mt-4" for="quantity">Quantity</label> <br>
+                                        <input class="" value="1" type="number" name="" id="quantity"
+                                            style="width: 70px;">
+                                        <button class="quick-btn btn w-100 mt-4"> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary"><a href="product-pages/product-page-29.html"
+                                        style="color:white">View More Details</a></button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 center-1" onmouseover="show(29)" onmouseout="hide(29)">
+                    <figure class="figure">
+                        <img src="images/os-30.webp" alt="" class="img-fluid img-responsive"
+                            onclick="location.href='Product-pages/product-page-30.html'">
+                        <p>Birchwood Spoon (Pack of 100)</p>
+                        <figcaption style="margin-top:-11px">&#8377 110.00</figcaption>
+                    </figure>
+                    <div class="abs">
+                        <a href="" class="text-center" data-toggle="modal" data-target="#myModal30">Quick View</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal30">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="owl-carousel owl-theme os-slider">
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-30.1.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-30.2.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-30.3.webp" alt="">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <h2 class="w-100">Birchwood Spoon (Pack of 100)</h2>
+                                        <h6 class="w-100">₹110.00</h6>
+                                        <label class="mt-4" for="size">Size</label>
+                                        <select name="" id="size" class="w-100 p-2">
+                                            <option value="" selected>Select</option>
+                                            <option value="">11 cm</option>
+                                            <option value="">15 cm</option>
+                                            <option value="">16 cm</option>
+
+                                        </select>
+                                        <label class="mt-4" for="quantity">Quantity</label> <br>
+                                        <input class="" value="1" type="number" name="" id="quantity"
+                                            style="width: 70px;">
+                                        <button class="quick-btn btn w-100 mt-4"> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary"><a href="product-pages/product-page-30.html"
+                                        style="color:white">View More Details</a></button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 center-1" onmouseover="show(30)" onmouseout="hide(30)">
+                    <figure class="figure">
+                        <img src="images/os-31.webp" alt="" class="img-fluid img-responsive"
+                            onclick="location.href='Product-pages/product-page-31.html'">
+                        <p>Birchwood Stirrer 140mm (Pack of 200)</p> <br>
+                        <figcaption style="margin-top:-11px">&#8377 66.00</figcaption>
+                    </figure>
+                    <div class="abs">
+                        <a href="" class="text-center" data-toggle="modal" data-target="#myModal31">Quick View</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal31">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="owl-carousel owl-theme os-slider">
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-31.1.webp" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="Product-pages-images/pi-31.2.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <h2 class="w-100">Birchwood Stirrer 140mm (Pack of 200)
+                                        </h2>
+                                        <h6 class="w-100">₹66.00</h6>
+                                        <label class="mt-4" for="quantity">Quantity</label> <br>
+                                        <input class="" value="1" type="number" name="" id="quantity"
+                                            style="width: 70px;">
+                                        <button class="quick-btn btn w-100 mt-4"> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary"><a href="product-pages/product-page-31.html"
+                                        style="color:white">View More Details</a></button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-12 d-flex justify-content-center my-5">
+                    <button
+                        style="border:none ; background: none; font-size:20px; margin-right:15px; outline: none;  cursor: pointer;"
+                        onclick="location.href='index.html'">
+                        <</button>
+                            <button
+                                style="border:none ; background: none; font-size:18px; margin-right:15px; outline: none; cursor: pointer;"
+                                onclick="location.href='index.html'">1</button>
+                            <button
+                                style="border:none ; background: none; font-size:18px; margin-right:15px; outline: none; ">2</button>
+                            <button
+                                style="border:none ; background: none; font-size:20px; margin-right:15px; outline: none; color: gray;">></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center mb-5">
+                    <button class="btn btn-success px-4" style="border-radius: 50px ; opacity: .8;">View
+                        More</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 w-100 mb-5">
+                <div class="card-img-top">
+                    <img src="images/why-choose-us.webp" class="img-fluid d-block w-100" alt=""
+                        style="filter: brightness(0.4); height: 415px;">
+                </div>
+                <div class="card-img-overlay">
+                    <div class="row center-x text-white h-100">
+                        <div class="col-lg-3 text-white justify-content-center w-100 mr-lg-5">
+                            <div class="for-border text-center">
+                                <img src="" alt="">
+                                <h2>Why Choose us</h2>
+                                <p>Qizaa- Sustainability In Your Pocket...</p>
+                            </div>
+                            <p class="text-center">At our core, we truly believe in making the world a more
+                                sustainable and better place to live in. </p>
+                        </div>
+                        <div class="col-lg-3 text-white d-lg-block d-flex justify-content-center ml-lg-5">
+                            <div class="top d-flex align-items-center mb-lg-5 mr-4">
+                                <div class="top-img mr-2 ">
+                                    <img src="images/choose-us-1.png" alt="">
+                                </div>
+                                <span>Best Sustainable Products</span>
+                            </div>
+                            <div class="bottom mt-lg-5 d-flex align-items-center">
+                                <div class="bottom-img mr-2">
+                                    <img src="images/choose-us-3.png" alt="">
+                                </div>
+                                <span>Environmental Priority</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 d-lg-block d-flex justify-content-center">
+                            <div class="top d-flex align-items-center mb-lg-5 mr-4">
+                                <div class="top-img mr-2">
+                                    <img src="images/choose-us-2.png" alt="">
+                                </div>
+                                <span>Way to Sustainable Life</span>
+                            </div>
+                            <div class="bottom d-flex align-items-center mt-lg-5 ">
+                                <div class="bottom-img mr-2">
+                                    <img src="images/choose-us-4.png" alt="">
+                                </div>
+                                <span>Community Focused</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <h1 class="text-center">Sustainable Brands</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-5 rounded-1 px-lg-4 pt-lg-5 mr-md-5 mb-5 border center shadow ">
+                        <figure class="figure ">
+                            <img src="images/Bronwn Living.jpg"
+                                class="figure-img img-fluid img-responsive center-block d-block mx-auto" alt="">
+                            <h5 class="text-center font-weight-bold pt-md-4">Sustainable Products</h5>
+                            <figcaption class="figure-caption text-center text-hover">Buy sustainable zero-waste
+                                products from best brands.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-3 col-md-5 rounded-1 px-lg-4 pt-lg-5 mr-lg-5 mb-5 border center shadow ">
+                        <figure class="figure ">
+                            <img src="images/planet-care.webp"
+                                class="figure-img img-fluid img-responsive center-block d-block mx-auto" alt="">
+                            <h5 class="text-center font-weight-bold pt-md-4">Sustainable Products</h5>
+                            <figcaption class="figure-caption text-center text-hover">Buy sustainable zero-waste
+                                products from best brands.</figcaption>
+                        </figure>
+                    </div>
+                    <div
+                        class="col-lg-3 col-md-5 rounded-1 rounded-1 lg-4 pt-lg-5 mr-lg-0 mr-md-5 mb-5 border center shadow ">
+                        <figure class="figure ">
+                            <img src="images/prakati.webp"
+                                class="figure-img img-fluid img-responsive center-block d-block mx-auto" alt="">
+                            <h5 class="text-center font-weight-bold pt-md-4">Sustainable Products</h5>
+                            <figcaption class="figure-caption text-center text-hover">Buy sustainable zero-waste
+                                products from best brands.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-3 col-md-5 rounded-1 px-lg-4 pt-lg-5 mr-lg-5  mb-5 border center shadow ">
+                        <figure class="figure ">
+                            <img src="images/Ecohoy.jpg"
+                                class="figure-img img-fluid img-responsive center-block d-block mx-auto" alt="">
+                            <h5 class="text-center font-weight-bold pt-md-4">Sustainable Products</h5>
+                            <figcaption class="figure-caption text-center text-hover">Buy sustainable zero-waste
+                                products from best brands.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-3 col-md-5 rounded-1 px-lg-4 pt-lg-5 mr-md-5 mb-5 border center shadow ">
+                        <figure class="figure ">
+                            <img src="images/sus-india.jpg"
+                                class="figure-img img-fluid img-responsive center-block d-block mx-auto" alt="">
+                            <h5 class="text-center font-weight-bold pt-md-4">Sustainable Products</h5>
+                            <figcaption class="figure-caption text-center text-hover">Buy sustainable zero-waste
+                                products from best brands.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-3 col-md-5 rounded-1 px-lg-4 pt-lg-5  mb-5 border center shadow ">
+                        <figure class="figure ">
+                            <img src="images/earthsy.jpg"
+                                class="figure-img img-fluid img-responsive center-block d-block mx-auto" alt="">
+                            <h5 class="text-center font-weight-bold pt-md-4">Sustainable Products</h5>
+                            <figcaption class="figure-caption text-center text-hover">Buy sustainable zero-waste
+                                products from best brands.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center mb-5">
+                <button class="btn btn-success px-5" style="border-radius: 50px ; opacity: .8;">View
+                    All</button>
+            </div>
+        </div>
+        <div class="container shadow my-5 rounded-1">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center my-4">
+                    <h2 class="text-success" style="font-style: italic;">Live A Sustainable Life</h2>
+                </div>
+                <div class="col-12 d-flex justify-content-center my-2">
+                    <h5 class="font-weight-bold">Join Us Now</h5>
+                </div>
+                <div class="col-12 d-flex justify-content-center my-2">
+                    <input type="email" id="input-hover" placeholder="Add your email" class="pr-5 pl-2">
+                </div>
+                <div class="col-12 d-flex justify-content-center my-3">
+                    <button class="btn btn-success px-4 font-weight-bold" style="border-radius: 50px;">Submit</button>
+                </div>
+
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <img src="images/create.jpg" alt="">
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <img src="images/innovate.jpg" alt="">
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <img src="images/scale.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container d-md-block d-none my-5">
+            <h2 class="text-center mb-4">Comming Soon</h2>
+            <div class="owl-carousel owl-comming-soon">
+                <div class="item">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-2">
+                            <img src="images/cs-1.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="images/cs-2.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="images/cs-3.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="images/cs-4.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="images/cs-5.jpg" class="d-block w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-2">
+                            <img src="images/cs-6.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="images/cs-7.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="images/cs-8.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="images/cs-9.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="images/cs-10.jpg" class="d-block w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="images/cs-11.jpg" class="d-block w-100 " id="slider-img" height="376px" alt="">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/cs-12.jpg" class="d-block w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-5" style="font-size:0.8rem;" onclick="hide_cart()">
+        <div class=" footer-top  d-flex flex-column justify-content-center  text-white py-5"
+            style="background-color:#232f3e;">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <h6>Contact</h6>
+                        <p>483/14, Opp. Harikaka <br> Compound, NH4, Belgavi-Hubli Service Road, Belgavi - Karnataka
+                            India -590016 <br> Email- info@qizaa.com <br> Call -+91 9075006557</p>
+                        <div>
+                            <img src="images/insta.jpeg" alt="">
+                            <img src="images/facebook.jpeg" alt="">
+                            <img src="images/twitter.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <h6>Shop</h6>
+                        <p>All Products <br>
+                            Lifestyle Products <br>
+                            Organic Product <br>
+                            Tableware</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mt-md-0 mt-4">
+                        <h6>Customer Support</h6>
+                        <p>
+                            Contact Us <br>
+                            Help Center <br>
+                            About Us <br>
+                            Careers
+                        </p>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 mt-md-0 mt-4">
+                        <h6 class="">Policy</h6>
+                        <p class="">
+                            Shipping & Returns <br>
+                            Terms & Conditions <br>
+                            Privacy Policy <br>
+                            FAQ
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-12 text-center">
+                    <p>We Accept the following Payming methods</p>
+                </div>
+            </div>
+            <div class="row justify-content-center px-4 pt-5">
+                <div class="col-md-1 col-2 ml-1">
+                    <img src="images/master_card.jpeg" class="img-fluid d-block w-100" alt="">
+                </div>
+                <div class="col-md-1 offset-lg-0 offset-2 col-2 ml-2">
+                    <img src="images/AmericanExpress.jpeg" class="img-fluid d-block w-100" alt="">
+                </div>
+                <div class="col-md-1 ml-2 col-3">
+                    <img src="images/BHIM.jpeg" class="img-fluid d-block w-100" alt="">
+                </div>
+                <div class="col-md-1 col-2 ml-2 ">
+                    <img src="images/upi.webp" class="img-fluid d-block w-100" alt="">
+                </div>
+                <div class="col-md-1 offset-lg-0 offset-2 col-2 ml-2 mt-md-0 mt-3">
+                    <img src="images/visa.webp" class="img-fluid d-block w-100" alt="">
+                </div>
+                <div class="col-md-1 col-2 ml-2 mt-md-0 mt-3">
+                    <img src="images/Paypal.jpeg" class="img-fluid d-block w-100" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom d-flex justify-content-center pt-5" style="background-color: #131a22; color:white">
+            <div class="content">
+                <div class="logo text-center">
+                    <img src="images/qizaa.jpeg" class="rounded-circle " alt="">
+                </div>
+                <div class="logo-text text-center ">
+                    <img src="images/qizaa-text.jpeg" class="bg-white p-1 my-2" alt="">
+                </div>
+                <p class="text-center">All Rights Reserved © 2021 by Qizaa - Sustainablity in Your Pocket</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        window.onload = function(){
+    window.scrollTo(1450, 1450);
+}
+        function show(i) {
+            const x = document.querySelectorAll(".abs");
+            const y = document.querySelectorAll('.center-1 .figure img');
+            x[i-18].classList.add("show");
+            y[i-18].src = `images/osh-${i + 1}.webp`
+        }
+        function hide(i) {
+            const x = document.querySelectorAll(".abs");
+            const y = document.querySelectorAll(".center-1 .figure img");
+            x[i-18].classList.remove("show");
+            y[i-18].src = `images/os-${i + 1}.webp`;
+        }
+        $(document).ready(function(){
+            $('.os-slider').owlCarousel({
+                items:1,
+                dots:true
+            })
+        })
+        $(document).ready(function(){
+            $(".owl-comming-soon").owlCarousel({
+                items:1,
+                nav:true
+            })
+        })
+    </script>
+</body>
+
+</html>

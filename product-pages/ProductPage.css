@@ -1,0 +1,137 @@
+@media (max-width:1198px) {
+   
+    .owl-next {
+        right: 30px !important;
+    }
+
+}
+
+@media (max-width:991px) {
+    .owl-prev {
+       
+    }
+
+    .owl-next {
+        right: 65px !important;
+    }
+    .head h4{
+        border-bottom: none !important;
+    }
+}
+
+@media (max-width:767px) {
+    .owl-prev {
+        
+    }
+
+    .owl-next {
+       right: 240px !important;
+    }
+    .owl-one{
+        margin-left: 7rem !important;
+    }
+}
+@media (max-width:465px) {
+    .owl-one{
+        margin-left: 3rem !important;
+    }
+}
+
+section {
+    margin-top: 150px;
+}
+
+a {
+    color: gray;
+    /* cursor: not-allowed; */
+}
+
+a:hover {
+    text-decoration: none;
+    color: gray;
+}
+
+a.actice:hover {
+    text-decoration: none;
+}
+
+a.active {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.owl-prev {
+    position: absolute;
+    left: -30px;
+    top: 25%;
+    outline: none !important;
+    font-size: 60px !important;
+}
+
+.owl-prev,
+.owl-next:hover {
+    border: none;
+    outline: none;
+}
+
+.owl-next {
+    position: absolute;
+    top: 25%;
+    font-size: 60px !important;
+    right: 85px;
+    outline: none !important;
+}
+
+.owl-prev,
+.owl-next:hover {
+    cursor: pointer;
+}
+
+.slick-list {
+    text-align: center;
+}
+
+.add-to-cart {
+    width: 80%;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(117 31 255);
+    color: white;
+}
+
+.add-to-cart:hover {
+    cursor: pointer;
+    background-color: rgba(117, 31, 255, 0.665);
+}
+
+.buy-now {
+    width: 80%;
+    border: none;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+}
+
+.buy-now:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.665);
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 99% !important;
+}
+.owl-one .item img {
+    height: 255px !important;
+}
+.head h4{
+    border-bottom:2px solid black;
+    width:45%;
+}
+.head button{
+    border:none;
+    font-size: 22px;
+    background: none;
+    outline: none;
+    cursor:pointer;
+}

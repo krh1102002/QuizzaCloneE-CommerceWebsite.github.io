@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.jg{
+    width: 400px;
+    
+}
+/* .jgg{
+    
+    
+} */
+.jj{
+    margin-top: 50px;
+    transition: all 0.4s ease-in-out 0s;
+}
+.jj:hover{
+    margin-top: -10px;
+}

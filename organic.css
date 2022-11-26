@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.jj{
+transition: all 0.4s ease-in-out 0s;
+}
+.jj:hover{
+    margin-top: -50px;
+}
+.row{
+    margin-top:50px ;
+}

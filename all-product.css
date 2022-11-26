@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+/* .cutter{
+    height: 340px;
+} */
+.cutter1{
+    height: 346px;
+}
+.cutter2{
+    height: 348px;
+}
+.jj{
+    position: relative;
+    transition: all 0.4s ease-in-out 0s;
+}
+.jj:hover{
+    margin-top: -50px;
+}
+.row img{
+    margin-top: 30px;
+}
+.card{
+    border: 0px solid blue;
+
+}
+.container h1{
+    margin-top: 162px;
+}
